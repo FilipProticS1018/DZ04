@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.header2 {
+  display: none;
+  background-color: black;
+  height: 100%;
+  max-width: 800px;
+}
+.hamburger {
+  width: 10%;
+  height: 100%;
+  background-color: black;
+  display: inline-block;
+  vertical-align: top;
+}
+.hamburger .line {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 60%;
+  height: 5px;
+  background-color: white;
+}
+.menu2 {
+  display: none;
+  margin-top: 10px;
+}
+.menu2 ul {
+  list-style-type: none;
+  margin: 0;
+}
+.menu2 ul li {
+  height: auto;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+.menu2 ul li a {
+  text-decoration: underline;
+  color: white;
+}
+.menu2 ul li a:hover {
+  background-color: #640303;
+}
+.logo2 {
+  display: inline-block;
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+.logo2 img {
+  width: 10%;
+  height: auto;
+  margin-top: 5px;
+}
+.login2 {
+  width: 5%;
+  display: inline-block;
+  margin-right: 5px;
+  text-align: right;
+}
+.login2 a {
+  text-decoration: none;
+}
+.login2 ion-icon {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+.login2 ion-icon:hover {
+  opacity: 0.8;
+}
+.search2 {
+  display: inline-block;
+  width: 5%;
+}
+.search2 a {
+  color: white;
+  font-size: 30px;
+}
+.search2 a:hover {
+  opacity: 0.8;
+}
+.cart2 {
+  width: 5%;
+  display: inline-block;
+}
+.cart2 a {
+  color: white;
+  font-size: 30px;
+}
+.cart2 a:hover {
+  opacity: 0.8;
+}
+.header {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.logo {
+  width: 15%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.logo img {
+  width: 45%;
+  height: auto;
+}
+.upper {
+  width: 85%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.moto {
+  width: 70%;
+  display: inline-block;
+}
+.moto h1 {
+  width: 60%;
+  height: auto;
+  color: white;
+  text-align: center;
+  font-family: 'Brush Script Mt';
+  font-size: 40px;
+  margin: 0 auto;
+  margin-left: 20%;
+  vertical-align: top;
+}
+.login {
+  width: 25%;
+  float: right;
+  vertical-align: top;
+  padding: 5px;
+  margin-right: 5px;
+  text-align: right;
+}
+.login a {
+  text-decoration: none;
+}
+.login a:hover {
+  opacity: 0.8;
+}
+.login span {
+  color: white;
+  font-size: 14px;
+}
+.login ion-icon {
+  padding-right: 5px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  vertical-align: top;
+}
+.lower {
+  display: inline-block;
+  width: 85%;
+  height: auto;
+  margin-bottom: 5px;
+}
+.menu {
+  width: 75%;
+  height: auto;
+  display: inline-block;
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+.menu ul li {
+  width: 13%;
+  height: auto;
+  font-size: 20px;
+  float: left;
+}
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.menu ul li a:hover {
+  background-color: #640303;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 800px) {
+  .header {
+    display: none;
+  }
+  .header2 {
+    display: block;
+  }
+  .main .left {
+    width: 100%;
+    display: block;
+    margin-right: 0;
+  }
+  .main .right {
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .moto h1 {
+    font-size: 30px;
+  }
+  .menu ul li a {
+    font-size: 16px;
+  }
+  .rest .search span {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .logo img {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header2 .logo2 {
+    width: 67%;
+  }
+  .header2 .logo2 img {
+    width: 15%;
+  }
+  .footer h3 {
+    font-size: 16px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header2 .logo2 {
+    width: 65%;
+  }
+  .header .logo2 img {
+    width: 15%;
+  }
+}
+.rest {
+  width: 14%;
+  height: auto;
+  float: right;
+  margin-right: 10px;
+}
+.search {
+  width: 75%;
+  height: auto;
+  background: white;
+  display: inline-block;
+  text-decoration: none;
+}
+.search ion-icon {
+  color: black;
+  vertical-align: middle;
+  font-size: 30px;
+}
+.search span {
+  font-size: 16px;
+  color: #b6b6b6;
+  text-decoration: none;
+}
+.cart {
+  width: 20%;
+  float: right;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+.cart:hover {
+  opacity: 0.8;
+}
+.main {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+}
+.left {
+  width: 45%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.left h2 {
+  text-decoration: underline;
+}
+.left form {
+  border: 1px solid black;
+  padding: 10px;
+  color: #b40303;
+  background: #f2f0f0;
+}
+.left form input {
+  width: 200px;
+}
+.left form a {
+  text-decoration: none;
+  color: #b40303;
+}
+.left form a:hover {
+  text-decoration: underline #b40303;
+}
+.right {
+  width: 50%;
+  height: auto;
+  float: right;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.right h2 {
+  text-decoration: underline;
+}
+.right iframe {
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  display: block;
+  clear: both;
+  background-color: black;
+  color: white;
+  padding-bottom: 10px;
+}
+.footer h3 {
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+.footer p {
+  margin: 0 auto;
+  padding: 2px;
+  font-size: 15px;
+  text-align: center;
+}

@@ -1,0 +1,446 @@
+@heder-pozadina:black;
+@tekst:white;
+@font:'Brush Script Mt';
+@moto-h1-font-size:40px;
+@search-pozadina:white;
+@left-form:rgb(180, 3, 3);
+@futer-pozadina:black;
+
+*
+{
+    box-sizing: border-box;
+}
+
+    .duzina(@visina,@sirina){
+    width:@sirina;
+    height:@visina;
+}
+
+
+
+body
+{
+    .duzina(auto,100%);
+    margin: 0;
+    padding: 0;
+}
+.header2
+{
+    display: none;
+    background-color: @heder-pozadina;
+    height: 100%;
+    max-width: 800px;
+}
+.hamburger
+{
+    .duzina(100%,10%);
+    background-color: @heder-pozadina;  
+    display: inline-block;
+    vertical-align: top;
+}
+.hamburger .line
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    .duzina(5px,60%);
+    background-color: white;
+}
+.menu2
+{
+    display: none;
+    margin-top: 10px;
+}
+.menu2 ul
+{
+    list-style-type: none;
+    margin: 0;
+}
+
+
+.menu2{
+    ul{
+        li{
+            height: auto;
+             font-size: 20px;
+             display: block;
+             margin-bottom: 5px; 
+        }
+    }
+}
+
+
+.menu2 ul li a
+{
+    text-decoration: underline;
+    color: @tekst;
+}
+.menu2 ul li a:hover
+{
+    background-color: rgb(100, 3, 3);
+}
+.logo2
+{
+    display: inline-block;
+    .duzina(auto,70%);
+    text-align: center;
+}
+.logo2 img
+{
+    .duzina(auto,10%);
+    margin-top: 5px;
+}
+.login2
+{
+    width: 5%;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: right;
+}
+.login2 a
+{
+    text-decoration: none;
+}
+.login2 ion-icon
+{
+    font-size: 30px;
+    color: @tekst;
+    text-decoration: none;
+}
+.login2 ion-icon:hover
+{
+    opacity: .8;
+}
+.search2
+{
+    display: inline-block;
+    width: 5%;
+}
+.search2 a
+{
+    color: @tekst;
+    font-size: 30px;
+}
+.search2 a:hover
+{
+    opacity: .8;
+}
+.cart2
+{
+    width: 5%;
+    display: inline-block;
+}
+.cart2 a
+{
+    color: @tekst;
+    font-size: 30px;
+}
+.cart2 a:hover
+{
+    opacity: .8;
+}
+.header
+{
+    background-color: @heder-pozadina;
+    .duzina(100%,100%);
+    display: block;
+}
+.logo
+{
+    .duzina(100%,15%);
+    float: left;
+    text-align: center;
+}
+.logo img
+{
+    .duzina(auto,45%);
+}
+.upper
+{
+    .duzina(auto,85%);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.moto
+{
+    width: 70%;
+    display: inline-block;
+}
+.moto h1
+{
+     .duzina(auto,60%);
+    color: @tekst;
+    text-align: center;
+    font-family: @font;
+    font-size: @moto-h1-font-size;
+    margin: 0 auto;
+    margin-left: 20%;
+    vertical-align: top;
+}
+.login
+{
+    width: 25%;
+    float: right;
+    vertical-align: top;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: right;
+}
+.login a
+{
+    text-decoration: none;
+}
+.login a:hover
+{
+    opacity: .8;
+}
+.login span
+{
+    color: @tekst;
+    font-size: 14px;
+}
+.login ion-icon
+{
+    padding-right: 5px;
+    font-size: 20px;
+    color: @tekst;
+    text-decoration: none;
+    vertical-align: top;
+}
+.lower
+{
+    display: inline-block;
+    .duzina(auto,85%);
+    margin-bottom: 5px;
+}
+.menu
+{
+     .duzina(auto,75%);
+    display: inline-block;
+}
+.menu ul
+{
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+.menu ul li
+{
+    .duzina(auto,13%);
+    font-size: 20px;
+    float: left;
+}
+.menu ul li a
+{
+    display: block;
+    text-decoration: none;
+    color: @tekst;
+    text-align: center;
+}
+.menu ul li a:hover
+{
+    background-color: rgb(100, 3, 3);
+    text-decoration: underline;
+}
+@media only screen and (max-width:800px)
+{
+    .header
+    {
+        display: none;
+    }
+    .header2
+    {
+        display: block;
+    }
+    .main .left
+    {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+    }
+    .main .right
+    {
+        width: 100%;
+        display: block;
+    }
+}
+@media only screen and (max-width:1300px)
+{
+
+}
+@media only screen and (max-width:1024px)
+{
+    .moto h1
+    {
+        font-size: 30px;
+    }
+    .menu ul li a
+    {
+        font-size: 16px;
+    }
+    .rest .search span
+    {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:1366px)
+{
+    .logo img
+    {
+        width: 70%
+    }
+}
+@media only screen and (max-width:900px)
+{
+    
+}
+@media only screen and (max-width:720px)
+{
+    
+}
+@media only screen and (max-width:600px)
+{
+    .header2 .logo2
+    {
+        width: 67%;
+    }
+    .header2 .logo2 img
+    {
+        width: 15%;
+    }
+    .footer h3
+    {
+        font-size: 16px;
+    }
+    .footer p
+    {
+        font-size: 14px;
+    }
+    
+}
+@media only screen and (max-width:400px)
+{
+    .header2 .logo2
+    {
+        width: 65%;
+    }
+    .header .logo2 img
+    {
+        width: 15%;
+    }  
+}
+.rest
+{
+     .duzina(auto,14%);
+    float: right;
+    margin-right: 10px;
+    
+}
+.search
+{
+     .duzina(auto,75%);
+    background: @search-pozadina;
+    display: inline-block;
+    text-decoration: none;
+}
+.search ion-icon
+{
+    color: black;
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+.search span
+{
+    font-size: 16px;
+    color: rgb(182, 182, 182);
+    text-decoration: none;
+}
+.cart 
+{
+    width: 20%;
+    float: right;
+    color: @tekst;
+    background-color: black;
+    color: @tekst;
+    font-size: 25px;
+}
+.cart:hover
+{
+    opacity: .8;
+}
+.main
+{
+    .duzina(auto,100%);
+    margin: 0 auto;
+    padding: 10px;
+}
+.left
+{
+    .duzina(auto,45%);
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.left h2
+{
+    text-decoration: underline;
+}
+.left form
+{
+    border: 1px solid black;
+    padding: 10px;
+    color: @left-form;
+    background: #f2f0f0;
+}
+.left form input
+{
+    width: 200px;
+}
+.left form a
+{
+    text-decoration: none;
+    color: @left-form;
+}
+.left form a:hover
+{
+    text-decoration: underline @left-form;
+}
+.right
+{
+    .duzina(auto,50%);
+    float: right;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.right h2
+{
+    text-decoration: underline;
+}
+.right iframe
+{
+    width: 100%;
+}
+.footer
+{
+    .duzina(auto,100%);
+    display: block;
+    clear: both;
+    background-color: @futer-pozadina;
+    color: @tekst;
+    padding-bottom: 10px;
+}
+.footer h3
+{
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.footer p
+{
+    margin: 0 auto;
+    padding: 2px;
+    font-size: 15px;
+    text-align: center;
+}
